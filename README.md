@@ -1,0 +1,2 @@
+# sitecraft
+Training site
