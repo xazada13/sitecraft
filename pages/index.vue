@@ -9,6 +9,10 @@ useHead({
     title: 'Тимофей - Commodi numquam sapilki fugit!',
     meta: [
         { name: 'description', content: 'Training site MSHP' },
+        {
+            property: 'og:image',
+            content: 'https://xazada13.github.io/sitecraft/social-previews/default.jpg'
+        },
     ],
 })
 const menuOpen = ref(false)
