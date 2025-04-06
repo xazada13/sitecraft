@@ -14,7 +14,7 @@ useHead({
             content: 'https://xazada13.github.io/sitecraft/social-previews/default.jpg'
         },
     ],
-})
+});
 const menuOpen = ref(false)
 </script>
 <template>
@@ -66,7 +66,7 @@ const menuOpen = ref(false)
                 </li>
             </ol>
         </nav>
-        <button @click="menuOpen = true" class=" md:hidden">
+        <button @click="menuOpen = true" class="md:hidden">
             <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                     stroke-width="1.5" d="M4 5h16M4 12h16M4 19h16" color="currentColor" />
