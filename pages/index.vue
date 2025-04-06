@@ -5,7 +5,11 @@ useHead({
             rel: 'stylesheet',
             href: 'https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Geologica:wght@100..900&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap'
         }
-    ]
+    ],
+    title: 'Тимофей - Commodi numquam sapilki fugit!',
+    meta: [
+        { name: 'description', content: 'Training site MSHP' },
+    ],
 })
 const menuOpen = ref(false)
 </script>
@@ -23,8 +27,7 @@ const menuOpen = ref(false)
                             d="M13.707 8.465a1 1 0 0 1 0 1.414L11.586 12l2.121 2.121a1 1 0 0 1-1.414 1.415l-2.828-2.829a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 0" />
                     </g>
                 </svg>
-                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                    viewBox="0 0 24 24">
+                <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                     <g fill="none" fill-rule="evenodd">
                         <path
                             d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
@@ -60,15 +63,15 @@ const menuOpen = ref(false)
             </ol>
         </nav>
         <button @click="menuOpen = true" class=" md:hidden">
-            <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                viewBox="0 0 24 24">
+            <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                     stroke-width="1.5" d="M4 5h16M4 12h16M4 19h16" color="currentColor" />
             </svg>
         </button>
 
     </header>
-    <section v-if="menuOpen" @click="menuOpen = false" class="fixed top-0 left-0 w-full h-full bg-black/90 z-50 flex flex-col items-center justify-center">
+    <section v-if="menuOpen" @click="menuOpen = false"
+        class="fixed top-0 left-0 w-full h-full bg-black/90 z-50 flex flex-col items-center justify-center">
         <nav class="flex flex-col items-center justify-center gap-7">
             <NuxtLink to="#info" class="text-white text-sm">
                 <h2>Обо мне</h2>

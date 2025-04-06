@@ -9,4 +9,13 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  target: 'static',
+  $production: {
+    app: {
+      baseURL: "/sitecraft"
+    },
+    router: {
+      base: "/sitecraft"
+    }
+  }
 })
