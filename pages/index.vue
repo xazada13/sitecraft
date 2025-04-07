@@ -16,6 +16,12 @@ useHead({
     ],
 });
 const menuOpen = ref(false)
+function openMenu(){
+    menuOpen.value = true
+}
+function closeMenu(){
+    menuOpen.value = false
+}
 </script>
 <template>
     <header
@@ -66,7 +72,7 @@ const menuOpen = ref(false)
                 </li>
             </ol>
         </nav>
-        <button @click="menuOpen = true" class="md:hidden">
+        <button @click="openMenu()" class="md:hidden">
             <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                     stroke-width="1.5" d="M4 5h16M4 12h16M4 19h16" color="currentColor" />
@@ -74,8 +80,8 @@ const menuOpen = ref(false)
         </button>
 
     </header>
-    <section v-if="menuOpen" @click="menuOpen = false"
-        class="fixed top-0 left-0 w-full h-full bg-black/90 z-50 flex flex-col items-center justify-center">
+    <section v-if="menuOpen" @click="closeMenu()"
+        class="fixed top-0 left-0 w-full h-full bg-black/90 z-100 flex flex-col items-center justify-center">
         <nav class="flex flex-col items-center justify-center gap-7">
             <NuxtLink to="#info" class="text-white text-sm">
                 <h2>Обо мне</h2>
