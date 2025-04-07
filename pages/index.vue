@@ -16,10 +16,10 @@ useHead({
     ],
 });
 const menuOpen = ref(false)
-function openMenu(){
+function openMenu() {
     menuOpen.value = true
 }
-function closeMenu(){
+function closeMenu() {
     menuOpen.value = false
 }
 </script>
@@ -83,18 +83,26 @@ function closeMenu(){
     <section v-if="menuOpen" @click="closeMenu()"
         class="fixed top-0 left-0 w-full h-full bg-black/90 z-100 flex flex-col items-center justify-center">
         <nav class="flex flex-col items-center justify-center gap-7">
-            <NuxtLink to="#info" class="text-white text-sm">
-                <h2>Обо мне</h2>
-            </NuxtLink>
-            <NuxtLink to="#stack" class="text-white text-sm">
-                <h2>Стек</h2>
-            </NuxtLink>
-            <NuxtLink class="text-white text-sm">
-                <h2>Проекты</h2>
-            </NuxtLink>
-            <NuxtLink to="#contacts" class="text-white text-sm">
-                <h2>Контакты</h2>
-            </NuxtLink>
+            <li>
+                <NuxtLink to="#info" class="text-white text-sm">
+                    <h2>Обо мне</h2>
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink to="#stack" class="text-white text-sm">
+                    <h2>Стек</h2>
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink class="text-white text-sm">
+                    <h2>Проекты</h2>
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink to="#contacts" class="text-white text-sm">
+                    <h2>Контакты</h2>
+                </NuxtLink>
+            </li>
         </nav>
     </section>
     <section id="home" class="h-screen max-w-5xl mx-[6%] lg:mx-auto mt-[-70px]">
