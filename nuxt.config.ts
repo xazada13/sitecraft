@@ -5,11 +5,13 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
   ssr: false,
+  target: 'static',
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
+  
   $production: {
     app: {
       baseURL: "/sitecraft"

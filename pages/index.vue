@@ -6,9 +6,10 @@ useHead({
             href: 'https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Geologica:wght@100..900&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap'
         }
     ],
-    title: 'Тимофей - Commodi numquam sapilki fugit!',
+    title: 'SiteCraft - Лучшие сайты',
     meta: [
-        { name: 'description', content: 'Training site MSHP' },
+        { name: 'description', content: 'Сайт-портфолио WEB-разработчика (Учебный проект)' },
+        { name: 'google-site-verification', content: 'BUzFPyilcwWEyZykNGNVRRn9WKl5fPNT3OWKDbyZlJ4' },
         {
             property: 'og:image',
             content: 'https://xazada13.github.io/sitecraft/social-previews/default.jpg'
